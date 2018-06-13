@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LearnCode.academy Beginner Angular</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+
+<body>
+<div class="container" ng-app="app">
+    <header ng-include="'nav.html'"></header>
+    <div ui-view></div>
+    <footer ng-include="'footer.html'"></footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="script.js"></script>
+<script src="controllers/homeCtrl.js"></script>
+<script src="controllers/aboutCtrl.js"></script>
+<script src="services/friends.js"></script>
+</body>
+</html>
